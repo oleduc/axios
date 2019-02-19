@@ -377,6 +377,14 @@ These are the available config options for making requests. Only the `url` is re
   // (see Cancellation section below for details)
   cancelToken: new CancelToken(function (cancel) {
   })
+
+  // `custom` allows for user or plugin defined configuration for use in interceptors
+  custom: {
+     myExtension: {
+       exampleCookieJar: { ... }
+     },
+     foo: 'bar'
+  }
 }
 ```
 
